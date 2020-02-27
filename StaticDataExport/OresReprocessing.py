@@ -53,7 +53,7 @@ def compute(typesTemp, materialsTemp):
 types = get_yaml("typeIDs")
 materials = get_yaml("invTypeMaterials")
 
-MAIN_OUT = compute(types, matterials)
+MAIN_OUT = compute(types, materials)
 
 print(MAIN_OUT)
 write_json('export', MAIN_OUT)
