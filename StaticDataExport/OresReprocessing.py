@@ -23,7 +23,7 @@ def write_json(yaml_path, data):
     with open(yaml_path + ".json" , 'w', encoding='utf8') as json_file:
         try:
             print("Writing: " + yaml_path + ".json")
-            json.dump(data, json_file)
+            json.dump(json.dumps(data, indent=4, sort_keys=True), json_file)
             print("Written: " + yaml_path + ".json")
         except Exception as exc:
             warnings.warn("Error in writing json_file in convert_yaml_json().")
@@ -31,27 +31,20 @@ def write_json(yaml_path, data):
             quit(1)
 
 def compute(typesTemp, materialsTemp):
-    importantKeys = {}
     output = {}
     for kes, vals in typesTemp.items():
         try:
-            if("Compressed" in vals['name']['en'][0:10]):
-                importantKeys[kes] = vals['name']['en']
-                output[vals['name']['en']] = {}
+            if("Compressed " in vals['name']['en'][0:11]):
+                temp = { }
+                for items in materialsTemp[kes]['materials']:
+                    temp[typesTemp[items['materialTypeID']]['name']['en']] = items['quantity']
+                output[vals['name']['en']] = temp
         except Exception as e:
             pass
-
-    for num in range(0, len(materials)):
-        if(materials[num]['typeID'] in importantKeys.keys()):
-            try:
-                matDetails = materials[num]
-                output[types[matDetails['typeID']]['name']['en']][types[matDetails['materialTypeID']]['name']['en']] = matDetails['quantity']
-            except Exception as e:
-                pass
     return output
 
 types = get_yaml("typeIDs")
-materials = get_yaml("invTypeMaterials")
+materials = get_yaml("typeMaterials")
 
 MAIN_OUT = compute(types, materials)
 
