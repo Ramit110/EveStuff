@@ -36,8 +36,8 @@ def compute(typesTemp, materialsTemp):
         try:
             if("Compressed " in vals['name']['en'][0:11]):
                 temp = { }
-                for items in materialsTemp[kes]['materials']:
-                    temp[typesTemp[items['materialTypeID']]['name']['en']] = items['quantity']
+                for its in materialsTemp[kes]['materials']:
+                    temp[typesTemp[its['materialTypeID']]['name']['en']] = its['quantity']
                 output[vals['name']['en']] = temp
         except Exception as e:
             pass
