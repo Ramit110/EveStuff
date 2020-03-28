@@ -22,7 +22,12 @@ caps = [
     "Avatar",
     "Leviathan",
     "Erebus",
-    "Ragnarok"
+    "Ragnarok",
+    "Providence",
+    "Charon",
+    "Obelisk",
+    "Fenrir",
+    "Rorqual"
 ]
 
 def get_yaml(yaml_path):
