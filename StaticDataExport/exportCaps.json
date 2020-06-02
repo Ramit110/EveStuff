@@ -200,6 +200,15 @@
         "Capital Construction Parts": 56,
         "Capital Propulsion Engine": 17
     },
+    "Orca": {
+        "Capital Capacitor Battery": 9,
+        "Capital Cargo Bay": 38,
+        "Capital Computer System": 7,
+        "Capital Construction Parts": 16,
+        "Capital Corporate Hangar Bay": 4,
+        "Capital Sensor Cluster": 4,
+        "Capital Ship Maintenance Bay": 7
+    },
     "Phoenix": {
         "Capital Armor Plates": 7,
         "Capital Capacitor Battery": 7,
