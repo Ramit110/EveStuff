@@ -28,7 +28,17 @@ caps = [
     "Obelisk",
     "Fenrir",
     "Rorqual",
-    "Orca"
+    "Orca",
+    "Chemosh",
+    "Caiman",
+    "Vehement",
+    "Revenant",
+    "Vendetta",
+    "Dagon",
+    "Loggerhead",
+    "Molok",
+    "Komodo",
+    "Vanquisher"	
 ]
 
 def get_yaml(yaml_path):
