@@ -21,18 +21,29 @@ ores = [
 ]
 
 def compute(typesTemp, materialsTemp):
+    output_id_quant = {}
     output = {}
-    stored = {}
+    needed = []
 
     for kes, vals in typesTemp.items():
         try:
             temp = { }
-            for its in materialsTemp[vals]['materials']:
-                if(its["materialTypeID"] not in stored):
-                    r = requests.get("https://esi.evetech.net/v3/universe/types/" + str(its["materialTypeID"]) + "/?datasource=tranquility&language=en-us")
-                    if(r.status_code == 200):
-                        stored[its["materialTypeID"]] = json.loads(r.text)["name"]
-                temp[stored[its["materialTypeID"]]] = its["quantity"]
+            for reproMaterials in materialsTemp[kes]['materials']:
+                mater = reproMaterials["materialTypeID"]
+                if((mater not in typesTemp.keys()) and (mater not in needed)):
+                    needed += [mater]
+                temp[mater] = reproMaterials["quantity"]
+            output_id_quant[vals] = temp
+        except Exception as e:
+            pass
+    if(len(needed) == 0):
+        return output_id_quant
+    typesTemp = {**typesTemp, **Util.get_name(map(str, needed))}
+    for kes, vals in output_id_quant.items():
+        try:
+            temp = {}
+            for vals_kes, vals_vals in vals.items():
+                temp[typesTemp[vals_kes]] = vals_vals
             output[kes] = temp
         except Exception as e:
             pass

@@ -36,7 +36,11 @@ caps = [
     "Loggerhead",
     "Molok",
     "Komodo",
-    "Vanquisher"	
+    "Vanquisher",
+    "Aeon",
+    "Hel",
+    "Nyx",
+    "Wyvern"
 ]
 
 def compute(typesTemp, blueprintsTemp):

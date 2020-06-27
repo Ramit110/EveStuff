@@ -1,0 +1,173 @@
+{
+    "Capital Propulsion Engine": {
+        "Tritanium": 457050,
+        "Pyerite": 110416,
+        "Mexallon": 41994,
+        "Isogen": 6938,
+        "Nocxium": 2110,
+        "Zydrine": 604,
+        "Megacyte": 302
+    },
+    "Capital Turret Hardpoint": {
+        "Tritanium": 546912,
+        "Pyerite": 113826,
+        "Mexallon": 45010,
+        "Isogen": 7760,
+        "Nocxium": 2358,
+        "Zydrine": 876,
+        "Megacyte": 386
+    },
+    "Capital Sensor Cluster": {
+        "Tritanium": 443591,
+        "Pyerite": 101026,
+        "Mexallon": 40877,
+        "Isogen": 6659,
+        "Nocxium": 1804,
+        "Zydrine": 666,
+        "Megacyte": 298
+    },
+    "Capital Armor Plates": {
+        "Tritanium": 473141,
+        "Pyerite": 111118,
+        "Mexallon": 43324,
+        "Isogen": 7109,
+        "Nocxium": 2141,
+        "Zydrine": 682,
+        "Megacyte": 304
+    },
+    "Capital Capacitor Battery": {
+        "Tritanium": 326973,
+        "Pyerite": 107842,
+        "Mexallon": 39547,
+        "Isogen": 6440,
+        "Nocxium": 1841,
+        "Zydrine": 660,
+        "Megacyte": 280
+    },
+    "Capital Power Generator": {
+        "Tritanium": 510149,
+        "Pyerite": 110413,
+        "Mexallon": 45621,
+        "Isogen": 7491,
+        "Nocxium": 2191,
+        "Zydrine": 728,
+        "Megacyte": 334
+    },
+    "Capital Shield Emitter": {
+        "Tritanium": 498880,
+        "Pyerite": 104957,
+        "Mexallon": 43194,
+        "Isogen": 7269,
+        "Nocxium": 2033,
+        "Zydrine": 696,
+        "Megacyte": 332
+    },
+    "Capital Jump Drive": {
+        "Tritanium": 749916,
+        "Pyerite": 142710,
+        "Mexallon": 49913,
+        "Isogen": 8617,
+        "Nocxium": 2249,
+        "Zydrine": 908,
+        "Megacyte": 444
+    },
+    "Capital Cargo Bay": {
+        "Tritanium": 874902,
+        "Pyerite": 72154,
+        "Mexallon": 24616,
+        "Isogen": 3504,
+        "Nocxium": 998,
+        "Zydrine": 286,
+        "Megacyte": 64
+    },
+    "Capital Drone Bay": {
+        "Tritanium": 347163,
+        "Pyerite": 83248,
+        "Mexallon": 33332,
+        "Isogen": 4499,
+        "Nocxium": 1258,
+        "Zydrine": 486,
+        "Megacyte": 172
+    },
+    "Capital Computer System": {
+        "Tritanium": 427708,
+        "Pyerite": 111110,
+        "Mexallon": 44110,
+        "Isogen": 6581,
+        "Nocxium": 1858,
+        "Zydrine": 648,
+        "Megacyte": 296
+    },
+    "Capital Construction Parts": {
+        "Tritanium": 388208,
+        "Pyerite": 93777,
+        "Mexallon": 37729,
+        "Isogen": 5104,
+        "Nocxium": 1530,
+        "Zydrine": 538,
+        "Megacyte": 212
+    },
+    "Capital Siege Array": {
+        "Tritanium": 555658,
+        "Pyerite": 125277,
+        "Mexallon": 47249,
+        "Isogen": 7916,
+        "Nocxium": 2438,
+        "Zydrine": 908,
+        "Megacyte": 428
+    },
+    "Capital Launcher Hardpoint": {
+        "Tritanium": 471653,
+        "Pyerite": 110370,
+        "Mexallon": 44713,
+        "Isogen": 7692,
+        "Nocxium": 2359,
+        "Zydrine": 860,
+        "Megacyte": 344
+    },
+    "Capital Jump Bridge Array": {
+        "Tritanium": 1121659,
+        "Pyerite": 278776,
+        "Mexallon": 75379,
+        "Isogen": 17669,
+        "Nocxium": 4176,
+        "Zydrine": 1488,
+        "Megacyte": 1134
+    },
+    "Capital Clone Vat Bay": {
+        "Tritanium": 640393,
+        "Pyerite": 139591,
+        "Mexallon": 48471,
+        "Isogen": 8888,
+        "Nocxium": 2612,
+        "Zydrine": 1082,
+        "Megacyte": 444
+    },
+    "Capital Doomsday Weapon Mount": {
+        "Tritanium": 841877,
+        "Pyerite": 207776,
+        "Mexallon": 61980,
+        "Isogen": 11132,
+        "Nocxium": 3317,
+        "Zydrine": 1108,
+        "Megacyte": 572
+    },
+    "Capital Ship Maintenance Bay": {
+        "Tritanium": 576759,
+        "Pyerite": 189942,
+        "Mexallon": 53312,
+        "Isogen": 9010,
+        "Nocxium": 2461,
+        "Zydrine": 914,
+        "Megacyte": 416
+    },
+    "Capital Corporate Hangar Bay": {
+        "Tritanium": 583442,
+        "Pyerite": 145664,
+        "Mexallon": 51297,
+        "Isogen": 9321,
+        "Nocxium": 2678,
+        "Zydrine": 938,
+        "Megacyte": 436
+    }
+}

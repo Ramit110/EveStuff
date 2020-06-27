@@ -1,8 +1,6 @@
-###
-### Code base aquired from Ravandel
-###
-
 import Util
+import json
+import requests
 
 components = [
     "Capital Propulsion Engine",
@@ -27,23 +25,39 @@ components = [
 ]
 
 def compute(typesTemp, blueprintsTemp):
+    output_id_quant = {}
     output = {}
+    needed = []
+
     for bps, datas in blueprintsTemp.items():
         try:
-            name = typesTemp[datas['activities']['manufacturing']['products'][0]['typeID']]['name']['en'];
-            if(name in components):
+            nameID = datas['activities']['manufacturing']['products'][0]['typeID'];
+            if(nameID in typesTemp.keys()):
                 temp = { }
                 for mats in datas['activities']['manufacturing']['materials']:
-                    temp[typesTemp[mats['typeID']]['name']['en']] = mats['quantity']
-                output[name] = temp
+                    currentMaterial = mats['typeID']
+                    if((currentMaterial not in typesTemp.keys()) and (currentMaterial not in needed)):
+                        needed += [currentMaterial]
+                    temp[currentMaterial] = mats['quantity']
+                output_id_quant[typesTemp[nameID]] = temp
+        except Exception as e:
+            pass
+    if(len(needed) == 0):
+        return output_id_quant
+    typesTemp = {**typesTemp, **Util.get_name(map(str, needed))}
+    for kes, vals in output_id_quant.items():
+        try:
+            temp = {}
+            for vals_kes, vals_vals in vals.items():
+                temp[typesTemp[vals_kes]] = vals_vals
+            output[kes] = temp
         except Exception as e:
             pass
     return output
 
-types = Util.get_yaml("typeIDs")
+types = Util.get_type_IDs(components)
 blueprints = Util.get_yaml("blueprints")
 
 MAIN_OUT = compute(types, blueprints)
 
-print(MAIN_OUT)
-Util.write_json('exportCapComp', MAIN_OUT)
+Util.write_json('CapComponents', MAIN_OUT)
