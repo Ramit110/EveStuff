@@ -33,27 +33,30 @@ def compute(typesTemp, blueprintsTemp):
         try:
             nameID = datas['activities']['manufacturing']['products'][0]['typeID'];
             if(nameID in typesTemp.keys()):
-                temp = { }
+                temp = { };
                 for mats in datas['activities']['manufacturing']['materials']:
-                    currentMaterial = mats['typeID']
+                    currentMaterial = mats['typeID'];
                     if((currentMaterial not in typesTemp.keys()) and (currentMaterial not in needed)):
-                        needed += [currentMaterial]
-                    temp[currentMaterial] = mats['quantity']
-                output_id_quant[typesTemp[nameID]] = temp
+                        needed += [currentMaterial];
+                    temp[currentMaterial] = mats['quantity'];
+                output_id_quant[typesTemp[nameID]] = temp;
         except Exception as e:
-            pass
+            pass;
+
     if(len(needed) == 0):
-        return output_id_quant
-    typesTemp = {**typesTemp, **Util.get_name(map(str, needed))}
+        return output_id_quant;
+
+    typesTemp = {**typesTemp, **Util.get_name(map(str, needed))};
     for kes, vals in output_id_quant.items():
         try:
-            temp = {}
+            temp = {};
             for vals_kes, vals_vals in vals.items():
-                temp[typesTemp[vals_kes]] = vals_vals
-            output[kes] = temp
+                temp[typesTemp[vals_kes]] = vals_vals;
+            output[kes] = temp;
         except Exception as e:
-            pass
-    return output
+            pass;
+
+    return output;
 
 types = Util.get_type_IDs(components)
 blueprints = Util.get_yaml("blueprints")

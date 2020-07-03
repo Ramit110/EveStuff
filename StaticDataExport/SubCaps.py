@@ -127,7 +127,10 @@ ships = [
 ]
 
 def compute(typesTemp, blueprintsTemp):
-    output = {}
+    output_id_quant = {};
+    output = {};
+    needed = [];
+
     for bps, datas in blueprintsTemp.items():
         try:
             name = typesTemp[datas['activities']['manufacturing']['products'][0]['typeID']]['name']['en'];
@@ -138,6 +141,7 @@ def compute(typesTemp, blueprintsTemp):
                 output[name] = temp
         except Exception as e:
             pass
+
     return output
 
 types = Util.get_yaml("typeIDs")

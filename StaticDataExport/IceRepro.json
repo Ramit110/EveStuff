@@ -1,0 +1,70 @@
+{
+    "Compressed Blue Ice": {
+        "Heavy Water": 69,
+        "Liquid Ozone": 35,
+        "Strontium Clathrates": 1,
+        "Oxygen Isotopes": 414
+    },
+    "Compressed Clear Icicle": {
+        "Heavy Water": 69,
+        "Liquid Ozone": 35,
+        "Helium Isotopes": 414,
+        "Strontium Clathrates": 1
+    },
+    "Compressed Dark Glitter": {
+        "Heavy Water": 691,
+        "Liquid Ozone": 1381,
+        "Strontium Clathrates": 69
+    },
+    "Compressed Enriched Clear Icicle": {
+        "Heavy Water": 104,
+        "Liquid Ozone": 55,
+        "Helium Isotopes": 483,
+        "Strontium Clathrates": 1
+    },
+    "Compressed Gelidus": {
+        "Heavy Water": 345,
+        "Liquid Ozone": 691,
+        "Strontium Clathrates": 104
+    },
+    "Compressed Glacial Mass": {
+        "Heavy Water": 69,
+        "Liquid Ozone": 35,
+        "Strontium Clathrates": 1,
+        "Hydrogen Isotopes": 414
+    },
+    "Compressed Glare Crust": {
+        "Heavy Water": 1381,
+        "Liquid Ozone": 691,
+        "Strontium Clathrates": 35
+    },
+    "Compressed Krystallos": {
+        "Heavy Water": 173,
+        "Liquid Ozone": 691,
+        "Strontium Clathrates": 173
+    },
+    "Compressed Pristine White Glaze": {
+        "Heavy Water": 104,
+        "Liquid Ozone": 55,
+        "Strontium Clathrates": 1,
+        "Nitrogen Isotopes": 483
+    },
+    "Compressed Smooth Glacial Mass": {
+        "Heavy Water": 104,
+        "Liquid Ozone": 55,
+        "Strontium Clathrates": 1,
+        "Hydrogen Isotopes": 483
+    },
+    "Compressed Thick Blue Ice": {
+        "Heavy Water": 104,
+        "Liquid Ozone": 55,
+        "Strontium Clathrates": 1,
+        "Oxygen Isotopes": 483
+    },
+    "Compressed White Glaze": {
+        "Heavy Water": 69,
+        "Liquid Ozone": 35,
+        "Strontium Clathrates": 1,
+        "Nitrogen Isotopes": 414
+    }
+}
