@@ -1,78 +1,69 @@
 {
     "Compressed Arkonor": {
-        "Tritanium": 22000,
-        "Mexallon": 2500,
-        "Megacyte": 320
+        "Pyerite": 3200,
+        "Mexallon": 1200,
+        "Megacyte": 120
     },
     "Compressed Bistot": {
-        "Pyerite": 12000,
-        "Zydrine": 450,
-        "Megacyte": 100
+        "Pyerite": 3200,
+        "Mexallon": 1200,
+        "Zydrine": 160
     },
     "Compressed Crokite": {
-        "Tritanium": 21000,
-        "Nocxium": 760,
-        "Zydrine": 135
+        "Pyerite": 800,
+        "Mexallon": 2000,
+        "Nocxium": 800
     },
     "Compressed Dark Ochre": {
-        "Tritanium": 10000,
-        "Isogen": 1600,
-        "Nocxium": 120
+        "Mexallon": 1360,
+        "Isogen": 1200,
+        "Nocxium": 320
     },
     "Compressed Gneiss": {
-        "Pyerite": 2200,
-        "Mexallon": 2400,
-        "Isogen": 300
+        "Pyerite": 2000,
+        "Mexallon": 1500,
+        "Isogen": 800
     },
     "Compressed Hedbergite": {
-        "Pyerite": 1000,
-        "Isogen": 200,
-        "Nocxium": 100,
-        "Zydrine": 19
+        "Pyerite": 450,
+        "Nocxium": 120
     },
     "Compressed Hemorphite": {
-        "Tritanium": 2200,
-        "Isogen": 100,
-        "Nocxium": 120,
-        "Zydrine": 15
+        "Isogen": 240,
+        "Nocxium": 90
     },
     "Compressed Jaspet": {
-        "Mexallon": 350,
-        "Nocxium": 75,
-        "Zydrine": 8
+        "Mexallon": 150,
+        "Nocxium": 50
     },
     "Compressed Kernite": {
-        "Tritanium": 134,
-        "Mexallon": 267,
-        "Isogen": 134
+        "Mexallon": 60,
+        "Isogen": 120
     },
     "Compressed Omber": {
-        "Tritanium": 800,
-        "Pyerite": 100,
-        "Isogen": 85
+        "Pyerite": 90,
+        "Isogen": 75
     },
     "Compressed Plagioclase": {
-        "Tritanium": 107,
-        "Pyerite": 213,
-        "Mexallon": 107
+        "Tritanium": 175,
+        "Mexallon": 70
     },
     "Compressed Pyroxeres": {
-        "Tritanium": 351,
-        "Pyerite": 25,
-        "Mexallon": 50,
-        "Nocxium": 5
+        "Pyerite": 90,
+        "Mexallon": 30
     },
     "Compressed Scordite": {
-        "Tritanium": 346,
-        "Pyerite": 173
+        "Tritanium": 150,
+        "Pyerite": 90
     },
     "Compressed Spodumain": {
-        "Tritanium": 56000,
-        "Pyerite": 12050,
-        "Mexallon": 2100,
-        "Isogen": 450
+        "Tritanium": 48000,
+        "Isogen": 1000,
+        "Nocxium": 160,
+        "Zydrine": 80,
+        "Megacyte": 40
     },
     "Compressed Veldspar": {
-        "Tritanium": 415
+        "Tritanium": 400
     }
 }
